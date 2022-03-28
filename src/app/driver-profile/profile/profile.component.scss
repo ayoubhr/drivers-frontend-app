@@ -1,7 +1,32 @@
+@media (max-width:360px){
+    .profile {
+        display: none;
+        width: 360px;
+    }
+    .card {
+        margin-left: -35px;
+    }
+    #title > p {
+        width: 1%;
+        & span {
+            padding: 1px;
+            font-size: 14px;
+            letter-spacing: 0px;
+        }
+        & button {
+            margin-left: -110px;
+        }
+    }
+    .races-info {
+        margin-left: 0;
+    }
+}
+
 #title {
     display: flex;
     margin-left: 13.3%;
     & p {
+        letter-spacing: 2px;
         margin-right: 45%;
         font-weight: bold;
         font-size: 20px;

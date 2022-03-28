@@ -1,13 +1,68 @@
 @font-face {
     font-family: 'Faster One';
     src: URL('./../assets/FasterOne-Regular.ttf') format('TrueType');  
-}    
+}
+
+@media (max-width: 360px) {
+    .container-fluid {
+        padding: 0;
+    }
+    #text {
+        width: 100%;
+        & p {
+            margin-left: 10%;
+        }
+        & .hid {
+            display: none;
+        }
+    }
+    #header {
+        //width: 100%;
+        margin-left: 1px;
+        & .ranking {
+            margin-right: 10%;
+            & p {
+                letter-spacing: 0.5px;
+                //color: blue;
+                margin-left: -50px;
+                font-size: 16px;
+                & #prix {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .select-race {
+        width: 50%;
+        margin-left: -125px;
+        margin-top: -5px;
+        & ul li {
+            & a {
+                list-style: none;
+                text-decoration: none;
+                font-size: 12px;
+                margin-left: -20px;
+            }
+            & .drop {
+                margin-left: -52px;
+                & a {
+                    font-size: 14px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
 
 %ranking_style {
     letter-spacing: 1.5px;
     font-weight: bold;
     font-style: italic;
     font-size: 20px;
+}
+
+.container-fluid {
+    padding: 40px;
 }
 
 #header {

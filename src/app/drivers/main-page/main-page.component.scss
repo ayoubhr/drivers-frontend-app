@@ -1,0 +1,56 @@
+#table {
+    height: 75%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+thead {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(41, 187, 41);
+}
+
+tr {
+    border: 0;
+    width: 100%;
+}
+
+th {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+td {
+    transition: 0.3s;
+    width: 12%;
+    height: 65px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+thead tr:first-child th:last-child {
+    border-radius: 0 1.5em 0 0;
+}
+
+i {
+    margin-left: 30px;
+}
+
+:nth-child(even) tbody {
+    background-color: rgba(122, 121, 121, 0.274);
+}
+
+tbody:hover, :nth-child(even) tbody:hover, thead {
+    & tr {
+        border-left: solid 12px rgb(41, 187, 41);
+        cursor: pointer;
+        & td {
+            transition: 0.3s;
+            color:rgb(41, 187, 41);
+            letter-spacing: 1px;
+            padding: 2px;
+            font-weight: bold;
+        }
+    }
+}

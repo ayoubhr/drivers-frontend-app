@@ -1,0 +1,86 @@
+<div id="title">
+    <p>Driver Season Results</p>
+
+    <button (click)="goBack()">Back</button>
+</div>
+
+<div class="profile">
+    <div class="driver-info" id="pilot">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header" id="cartaUno">
+                <h5 style="color:white;">
+                    <i class="icon icon-news"></i>
+                    <a href="#collapseUno" data-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="collapseUno">Click here to check the pilot</a>
+                </h5>
+            </div>
+            <div aria-labelledby="cartaUno" class="collapse" data-parent="#pilot" id="collapseUno">
+                <img class="card-img-top" src="./../../../assets/418V46UrfUL._SX218_BO1,204,203,200_QL40_ML2_.jpg"
+                    alt="Card image cap">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p>Name</p>
+                        <p>{{ driver[0]?.name }}</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Age</p>
+                        <p>{{ driver[0]?.age }}</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Team</p>
+                        <p>{{ driver[0]?.team }}</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Global Ranking</p>
+                        <p *ngIf="driver[0]?.position == 1">
+                            <img src="./../../../assets/first.png" alt="First place">
+                        </p>
+                        <p *ngIf="driver[0]?.position == 2">
+                            <img src="./../../../assets/second.png" alt="Second place">
+                        </p>
+                        <p *ngIf="driver[0]?.position == 3">
+                            <img src="./../../../assets/third.png" alt="Third place">
+                        </p>
+                        <p *ngIf="driver[0]?.position != 3 && driver[0]?.position != 2 && driver[0]?.position != 1">
+                            {{ driver[0]?.position }}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="races-info">
+
+        <table class="table">
+            <div *ngFor="let l of loop; let i = index">
+                <thead *ngIf="i == 0">
+                    <tr>
+                        <th scope="col">Race</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ driver[0].races[i].name }}</td>
+                        <td *ngIf="driver[0].races[i].position == 1">
+                            <img src="./../../../assets/first.png" alt="First place">
+                        </td>
+                        <td *ngIf="driver[0].races[i].position == 2">
+                            <img src="./../../../assets/second.png" alt="Second place">
+                        </td>
+                        <td *ngIf="driver[0].races[i].position == 3">
+                            <img src="./../../../assets/third.png" alt="Third place">
+                        </td>
+                        <td
+                            *ngIf="driver[0].races[i].position != 3 && driver[0].races[i].position != 2 && driver[0].races[i].position != 1">
+                            {{ driver[0].races[i].position }}
+                        </td>
+                        <td>{{ driver[0].races[i].time }}</td>
+                    </tr>
+                </tbody>
+            </div>
+        </table>
+
+    </div>
+</div>

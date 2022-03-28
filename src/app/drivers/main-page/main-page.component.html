@@ -1,0 +1,33 @@
+<div id="table">
+    <table class="table">
+        <div *ngFor="let driver of drivers; let i = index">
+            <thead *ngIf="i == 0">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Team</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr (click)="routeToProfile(i)">
+                    <td><i class="bi bi-person-bounding-box"></i></td>
+                    <td *ngIf="driver.position == 1">
+                        <img src="./../../../assets/first.png" alt="First place">
+                    </td>
+                    <td *ngIf="driver.position == 2">
+                        <img src="./../../../assets/second.png" alt="Second place">
+                    </td>
+                    <td *ngIf="driver.position == 3">
+                        <img src="./../../../assets/third.png" alt="Third place">
+                    </td>
+                    <td *ngIf="driver.position > 3">
+                        {{ driver.position }}
+                    </td>
+                    <td>{{ driver.name }}</td>
+                    <td>{{ driver.team }}</td>
+                </tr>
+            </tbody>
+        </div>
+    </table>
+</div>

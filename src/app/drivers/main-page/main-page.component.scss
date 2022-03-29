@@ -1,5 +1,6 @@
 @media (max-width: 360px){
     #table {
+        
         & table {
             width: 250px;
             margin-left: -45px;
@@ -44,6 +45,7 @@ th {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+    text-align: center;
 }
 
 td {
@@ -52,6 +54,7 @@ td {
     height: 65px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
+    text-align: center;
 }
 
 thead tr:first-child th:last-child {

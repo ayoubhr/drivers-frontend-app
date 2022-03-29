@@ -1,10 +1,13 @@
 @media (max-width:360px){
-    .profile {
-        display: none;
-        width: 360px;
+    .profile{
+        display: flex;
+        margin-left: 11%;
     }
     .card {
         margin-left: -35px;
+    }
+    #title {
+        margin-left: 10%;
     }
     #title > p {
         width: 1%;
@@ -18,16 +21,25 @@
         }
     }
     .races-info {
-        margin-left: 0;
+        margin: 0px 0px 0px -293px;
+        margin-top: 65px;
+        & table {
+            width: 320px;
+        }
+    }
+}
+
+@media (min-width: 360px){
+    #title {
+        margin-left: 12.5%;
     }
 }
 
 #title {
     display: flex;
-    margin-left: 13.3%;
     & p {
         letter-spacing: 2px;
-        margin-right: 45%;
+        margin-right: 43%;
         font-weight: bold;
         font-size: 20px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -42,18 +54,18 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         height: 35px;
         width: 70px;
-        margin-left: 20%;
+        margin-left: 18%;
     }
 }
 
-.profile{
-    display: flex;
-    margin-left: 3%;
-}
-
-.driver-info {
-    margin-left: 7%;
-    
+@media (min-width:360px) {
+    .profile{
+        display: flex;
+        margin-left: 3%;
+    }
+    .driver-info {
+        margin-left: 7%;
+    }
 }
 
 .card {
@@ -121,16 +133,26 @@
 
 /*************************************************/
 
-.races-info {
-    margin-left: 145px;
+@media (min-width: 360px){
+    .races-info {
+        margin-left: 145px;
+    }
+    td:nth-child(2) {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 360px){
+    
 }
 
 table {
     width: 600px;
+    margin-left: -10px;
 }
 
 thead {
-    width: 600px;
+    width: 100%;
     height: 50px;
     background-color: rgb(41, 187, 41);
     border-left: 1px solid black;
@@ -141,7 +163,7 @@ thead tr:first-child th:last-child {
 }
 
 tbody {
-    width: 600px;
+    width: 100%;
     border-left: 0.5px solid black;
     border-bottom: 0.5px solid black;
     background-color: rgba(238, 238, 238, 0.637);
@@ -156,6 +178,7 @@ th {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+    text-align: center;
 }
 
 td {
@@ -164,11 +187,7 @@ td {
     height: 65px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
-    
-}
-
-td:nth-child(2) {
-    padding: 20px;
+    text-align: center;
 }
 
 i {

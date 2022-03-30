@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { DriversService } from 'src/app/services/drivers.service';
-import { Driver, ResponseDrivers } from '../interfaces/drivers';
+import { Driver } from '../interfaces/drivers';
 
 @Component({
   selector: 'app-main-page',

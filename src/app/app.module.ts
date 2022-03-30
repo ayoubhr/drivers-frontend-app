@@ -8,7 +8,6 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
 import { RouterModule } from '@angular/router';
 import { BaseUrlInterceptor } from './interceptors/base-url.interceptor';
 import { CommonModule } from '@angular/common';
-import { MainPageComponent } from './drivers/main-page/main-page.component';
 import { DriverProfileModule } from './driver-profile/driver-profile.module';
 
 @NgModule({

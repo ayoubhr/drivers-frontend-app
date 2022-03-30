@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DriverProfileRoutingModule } from './driver-profile/driver-profile-routing.module';
-import { DriverProfileModule } from './driver-profile/driver-profile.module';
 import { DriversRoutingModule } from './drivers/drivers-routing.module';
 
 const routes: Routes = [

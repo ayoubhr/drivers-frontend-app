@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { EventEmitter, Injectable } from '@angular/core';
-import { Observable, ReplaySubject } from 'rxjs';
-import { Driver, ResponseDrivers } from '../drivers/interfaces/drivers';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Driver } from '../drivers/interfaces/drivers';
 
 @Injectable({
   providedIn: 'root'
